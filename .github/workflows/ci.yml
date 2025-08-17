@@ -3,7 +3,7 @@ name: CI-CD to EC2
 on:
   push:
     branches: [ master ]
-  workflow_dispatch:  # manual trigger if you ever needed
+  workflow_dispatch:  # manual trigger if you ever needed to trigger manually
 
 concurrency:
   group: deploy-main
