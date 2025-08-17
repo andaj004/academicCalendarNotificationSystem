@@ -70,7 +70,6 @@ jobs:
       - name: Build frontend
         working-directory: ${{ env.APP_DIR }}/frontend
         env:
-          REACT_APP_API_URL: ${{ env.REACT_APP_API_URL }}
           NODE_OPTIONS: --max-old-space-size=512
         run: npm run build
 
