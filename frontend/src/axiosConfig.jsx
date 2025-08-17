@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const axiosInstance = axios.create({
   // Always call relative to current domain
-  baseURL: '',
+  baseURL: '/api',
   headers: { 'Content-Type': 'application/json' },
 });
 
