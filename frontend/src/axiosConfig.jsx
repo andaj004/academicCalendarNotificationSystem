@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || 'http://100.26.42.127:5001',
+  // Always call relative to current domain
+  baseURL: '/api',
   headers: { 'Content-Type': 'application/json' },
 });
 
